@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellow;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#about {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#skills {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#projects {
+    background-color: white;
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+#resume {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact {
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+    /* border: 2px solid red; */
+}
+body{
+    background-image: url('/images/bg.webp');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+}
+.container{
+    /* border: 2px solid red; */
+    margin-left: 32%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 25px;
+    padding: 24px;
+    border-radius: 25px;
+    border: 3px solid #1a1460;
+    background-color: #a7dcff;
+    position: relative;
+    top: -105px;
+    margin: 156px;
+    right: 166px;
+    height: 520px;
+    margin-bottom: 68px;
+}
+
+
+/* .tops{
+    top: 8px;
+    left: 37px;
+} */
+
+h1{
+    position: relative;
+    display: inline-block;
+    font-size: 62px;
+    color: #1c0456;
+    top: 8px;
+    left: 37px;
+}
+
+img{
+    display: inline-block;
+    height: 69px;
+    width: 57px;
+    position: relative;
+    margin: -10px;
+    top: 14px;
+    left: 30px;
+}
+
+button{
+    height: 53px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: #71bcee;
+    border: 0.3px solid black;
+    font-size: 40px;
+    margin: 10px;
+    position: relative;
+    top: 32px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.primary{
+    align-items: center;
+    text-align: right; /* Align text to the right */
+    font-size: 50px;
+    margin-left: 10px;
+    min-width: 200px; /* Set a minimum width */
+    width: auto; /* Allow the width to adjust based on content */
+    border-radius: 24px;
+    background-color: #4aa2dd;
+    padding: 10px; 
+    /* color: burlywood; */
+}
+
+.primary:hover{
+    color: black;
+    background-color: rgb(100, 158, 235);
+}
+footer{
+    text-indent: 535px;
+    
+}

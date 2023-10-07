@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/calculator-solid.svg" alt="" class="tops">
+        <h1 class="tops">CALCULATOR</h1>
+
+        <div class="main">
+            <div>
+                <p id="h-primary" class="primary">&nbsp;</p>
+            </div>
+            <div>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="clearLast()">DEL</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+            </div>
+            <div>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('*')">*</button>
+            </div>
+            <div>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('-')">-</button>
+            </div>
+            <div>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('+')">+</button>
+            </div>
+            <div>
+                <button onclick="display('00')">00</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="Result()">=</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy LS. All rights reserved.
+</footer>
+</body>
+</html>

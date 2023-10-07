@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+} 
+body{
+  /* border: 2px solid red; */
+  background-image: url('/images/bg.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+                                          /* HEADER */
+
+.logo img {  
+  /* border: 2px solid red; */
+  height: 77px;
+  width: 360px;
+  bottom: 0px;
+  position: relative;
+  right: 2px;
+  filter: invert(1);
+}
+
+.logo p{
+  /* border: 2px solid red; */
+  bottom: 16px;
+  display: inline-block;
+  position: relative;
+  right: 292px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #e1f0ff;
+}
+
+header {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 10px;
+  padding-bottom: 0px;
+  top: 0; 
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 31px 20px;
+  position: relative;
+  bottom: 4px;
+  right: 5px;
+  display: inline-block;
+}
+
+nav ul li a::after{
+  content: "";
+  border-radius: 4px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  top: -15px; 
+  border-bottom: 3px solid #007bff; 
+  transition: all 0.2s ease; 
+}
+
+nav ul li a:hover{
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+} 
+
+nav ul li a:hover::after {
+  opacity: 1;
+}
+
+                                            /* ABOUT */
+
+.about{
+  /* border: 2px solid red; */
+  height: 550px;
+}
+
+.about h4 {
+    /* border: 2px solid red; */
+  color: #fff700;
+    margin-right: 20px;
+    position: relative;
+    right: 364px;
+    display: inline-block;
+    letter-spacing: 1px;
+    bottom: 335px;
+    font-size: 21px;
+}
+
+.about h1 {
+  /* border: 2px solid red; */
+  color: white;
+  position: relative;
+  display: inline-block;
+  right: 675px;
+  letter-spacing: 1px;
+  height: 68px;
+  width: 211px;
+  bottom: 230px;
+  font-size: 42px;
+}
+
+.about p{
+  /* border: 2px solid red; */
+  display: inline-block;
+  position: relative;
+  height: 96px;
+  width: 536px;
+  left: 121px;
+  bottom: 207px;
+  color: white;
+word-spacing: 2px;
+font-size: 18px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile{
+  /* border: 2px solid red; */
+  display: inline-block;
+  height: 482px;
+  left: 600px;
+  position: relative;
+  top: 35px;
+}
+
+#resume {
+  /* border: 2px solid red; */
+  display: inline-block;
+  bottom: 161px;
+  position: relative;
+  right: 426px;
+  border-radius: 50px;
+  padding: 9px;
+  background-color: #1a2897;
+  color: white;
+}
+
+#resume:hover{
+   background-color: #aa7af6;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon{
+  margin: 2px;
+  bottom: 113px;
+  filter: invert(100%);
+  z-index: 1;
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+  position: relative;
+  right: 615px;
+  border-radius: 50%;
+  border: 2px solid;
+  padding: 3px;
+}
+
+.social-icon:hover{
+  cursor: pointer;
+}
+
+                                               /* SKILLS */
+                  
+
+.skills {
+  /* border: 2px solid red; */
+  height: 550px;
+} 
+
+.skills h1{
+  color: white;
+  left: 59px;
+  position: relative;
+  display: inline-block;
+}
+
+.skills h1:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px; 
+  border-bottom: 3px solid #007bff; 
+  border-radius: 50%;
+}
+  
+.skill-box {
+  border: 1px solid #000;
+    border-radius: 10px;
+    margin: 34px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #015a96;
+    display: inline-block;
+    left: 100px;
+    position: relative;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.skill-box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 20px 20px rgba(43, 168, 252, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.skill-box:hover::after {
+  opacity: 1;
+}
+
+.skill-box:hover{
+  cursor: pointer;
+}
+  
+.skill-box img {
+  max-width: 100px; 
+  height: auto; 
+}
+
+/* .primary-skills{
+  border: 2px solid red;
+}  */
+
+                                                 /* PROJECTS */
+
+ .project-container {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.prohead{
+  position: relative;
+  color: white;
+  left: 59px;
+  display: inline-block;
+  bottom: 20px;
+}
+
+.prohead:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px; 
+  border-bottom: 3px solid #007bff; 
+  transition: all 0.2s ease; 
+  border-radius: 50%;
+}
+                                                
+.project-box {
+  flex-basis: calc(35.33% - -7px);
+  margin: 18px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(191 178 255 / 70%);
+  border: 1px solid #ddd;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 13px 15px 15px rgba(76, 228, 248, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-box:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
+.project-box:hover::after {
+  opacity: 1;
+}
+                                                
+.project-box h3 {
+  font-size: 18px;
+  margin-top: 0;
+  left: 10px;
+  position: relative;
+}
+                                                
+.project-box p {
+  font-size: 16px;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  position: relative;
+  top: 23px;
+  padding-right: 20px;
+  padding-left: 11px;
+  font-family:Arial, Helvetica, sans-serif;
+}  
+
+.project-box p+p{
+  top: 21px;
+  position: relative;
+  left: 2px;
+  word-spacing: 19px;
+  color: #564747;
+  font-weight: bolder;
+}
+
+.project-box img{
+  height: 15px;
+  width: 47px;
+  left: 400px;
+  position: relative;
+  bottom: 18px;
+}
+
+/* h1{
+  border: 2px solid red;
+} */
+
+                                                  /* CONTACT */
+
+  .contact-box{
+    /* border: 2px solid red; */
+    background-size: cover; 
+    background-position: center center;
+  }
+
+  .contact-form { 
+  /* border: 2px solid red; */
+  max-width: 400px;
+  margin: 34px auto;
+  padding: 27px;
+  border-radius: 10px;
+  box-shadow: 0 0 27px rgb(192 98 255 / 54%);
+  }
+
+  .contact-form::before{
+    content: "";
+    opacity: 2px;
+  }
+
+ .contact-form h2{
+  position: relative;
+  bottom: 13px;
+  color: white;
+  display: inline-block;
+ }
+
+ .contact-form h2:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px; 
+  border-bottom: 3px solid #007bff; 
+  transition: all 0.2s ease; 
+  border-radius: 50%;
+  cursor: pointer;
+}
+                                        
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+                                        
+label {
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+                                        
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+                                        
+input[type="submit"] {
+  background-color: #1475dc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+                                        
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}                                                 
+
+                                            /* FOOTER */
+
+footer{
+  text-indent: 535px;
+  color: aliceblue;
+}
+
+
+
